@@ -61,7 +61,7 @@ function getOrderStatus(Status: OrderStatus): string {
     case OrderStatus.Delivered:
       return 'Замовлення доставлено';
     case OrderStatus.Cancelled:
-      'Замовлення скасовано';
+      return 'Замовлення скасовано';
     default :
       throw new Error ('Невідомий статус замовлення');
   }
